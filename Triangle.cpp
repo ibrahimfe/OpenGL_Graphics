@@ -19,7 +19,7 @@ GLuint VBO, VAO, shader, uniformModel;
 bool direction = true;
 float triOffset = 0.0f;
 float triMaxOffset = 0.5f;
-float triIncrement = 0.01f;
+float triIncrement = 0.001f;
 
 // rotation
 const float toRadian = 3.14159265 / 180;
@@ -58,9 +58,9 @@ void main()                                                                   \n
 void CreateTriangle()
 {
     GLfloat vertices[] = {
-        -1.0f, -1.0f, 0.0f,
-        1.0f, -1.0f, 0.0f,
-        0.0f, 1.0f, 0.0f};
+        -0.5f, -0.5f, 0.0f,
+        0.2f, -0.5f, 0.0f,
+        0.15f, 0.2f, 0.0f};
 
     glGenVertexArrays(1, &VAO);
     glBindVertexArray(VAO);
