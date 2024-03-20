@@ -60,7 +60,7 @@ void CreateTriangle()
     GLfloat vertices[] = {
         -0.5f, -0.5f, 0.0f,
         0.2f, -0.5f, 0.0f,
-        0.15f, 0.2f, 0.0f};
+        -0.15f, 0.2f, 0.0f};
 
     glGenVertexArrays(1, &VAO);
     glBindVertexArray(VAO);
